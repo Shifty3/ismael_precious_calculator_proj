@@ -19,11 +19,56 @@ let backspace = document.querySelector(".backspace").innerHTML;
 let zero = parseInt(document.querySelector(".zero").innerHTML);
 let dot = document.querySelector(".dot").innerHTML;
 let equal = document.querySelector(".equal").innerHTML;
-//then we diplay it on the output screen
-//after we makee it so that user can input any equation
+
+let output = document.querySelector(".output-field")
+var firstVal =1
+var secondVal =1
+var operatorVal 
+var result
+//display element
+function buttonClick(btnVal){
+    output.innerHTML = btnVal;
+}
+//storing the expression
+function operatorBtn(operatoerSign){
+    output.innerHTML = '';
+    //when i click + its goig to add
+    console.log(operatoerSign)
+    console.log("we are doing ____ operation")
+    if(operatoerSign === "+"){
+        operatorVal = operatoerSign
+    }
+
+
+    if(operatoerSign === "="){
+        if(operatorVal === "+"){
+            runAddOperation()
+            output.innerHTML = result
+        }
+        
+    }
+
+}
+
+//adding event handlers for each buttons
+function runAddOperation(){
+    result = firstVal + secondVal    
+}
+//then we diplay each value on the output screen
+
+//when i click on +/- its going to make the number a negative
+//when i click on the % its going to get the percent of the numbr 
+//when i click on x its goig to mutiply the numbers 
+//wehn i click on the - its going to subtract the numbers
+
+//when i click on <~ its going to take the last value out the equation
 //then make sure '=' sums up the equation 
 //next we implement the clear button to work
-  
 
+
+
+// function (output){
+//     display value += output; 
+// }
 
 
