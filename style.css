@@ -25,14 +25,13 @@ body{
     align-items: center;
     width: 90%;
     height: 4rem;
+    padding-right: 5px;
     margin: 20px;
     background-color: #a2bbcf;
 }
 
 .output-field p{
-    margin: 20px;
     font-size: x-large;
-    padding: 20px;
 }
 
 .input-field{
