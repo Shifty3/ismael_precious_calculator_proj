@@ -54,8 +54,7 @@ function operatorBtn(operatoerSign) {
 
   if (operatoerSign === "=") {
     if (operatorVal === "+") {
-      runAddOperation();
-      output.innerHTML = result;
+   
     }
   }
 }
