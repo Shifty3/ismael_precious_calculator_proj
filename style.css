@@ -1,5 +1,5 @@
 body{
-    display: grid;
+    display: flex;
     justify-content: center ;
     align-items: center;
     padding: 0;
@@ -10,9 +10,9 @@ body{
 
 .container{
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    justify-content: flex-start;
     width: 300px;
     height: 500px;
     border-radius: 26px;
@@ -21,11 +21,12 @@ body{
 
 .output-field{
     display: flex;
-    justify-content: flex-end;
+    justify-items: center;
     align-items: center;
     width: 90%;
     height: 4rem;
-    padding-right: 5px;
+    padding-right: 2px;
+    padding-left: 2px;
     margin: 20px;
     background-color:#f57fc2;
 }
@@ -36,9 +37,9 @@ body{
 
 .input-field{
     display: grid;
-    grid-template-columns: 40px 40px 40px 40px;
-    grid-template-rows: 40px 40px 40px 40px 10px;
-    justify-content: center;
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: repeat(auto-fill);
+    grid-gap: 10px;
     width: 90%;
     height: 23rem;
     margin-top: 5px;
@@ -51,10 +52,10 @@ body{
 
 .btn{
     display: flex;
-    flex-direction: column;
+    justify-items: center;
     justify-content: center;
     color: white;
-    width: 16%;
+    width: 70%;
     height: 45px;
     margin: 10px;
     border-radius: 100%;
