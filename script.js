@@ -48,11 +48,13 @@ function toggleNegative(){
   }
 }
 
+
 function calculatePercent(){
   let currentValue = parseFloat(output.innerHTML);
   //checking if currentValue is a number
   if (!isNaN(currentValue)){
     output.innerHTML = currentValue / 100;
+
   }
 }
 
