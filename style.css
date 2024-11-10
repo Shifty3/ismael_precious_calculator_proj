@@ -10,7 +10,7 @@ body{
 
 .container{
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 300px;
@@ -53,7 +53,7 @@ body{
 
 .btn{
     display: flex;
-    justify-items: center;
+    align-items: center;
     justify-content: center;
     color: white;
     width: 70%;
